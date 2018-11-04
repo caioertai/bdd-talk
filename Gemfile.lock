@@ -191,7 +191,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
-  capybara
+  capybara (>= 2.4.0)
   chromedriver-helper
   jbuilder (~> 2.5)
   launchy
