@@ -32,7 +32,7 @@ module BddTalk
 
     config.generators do |g|
       g.template_engine :haml
-      g.test_framework  :rspec
+      g.test_framework  false
       g.stylesheets     false
       g.javascripts     false
       g.helper          false
