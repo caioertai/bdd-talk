@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :pets, only: %i[show] do
+  resources :pets, only: %i[show new create] do
     member do
       get :cuddle
     end

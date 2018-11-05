@@ -1,0 +1,7 @@
+%h1 Create Pet
+= form_for @pet do |form|
+  = form.label :name
+  = form.text_field :name
+  = form.label :species
+  = form.text_field :species
+  = form.submit
