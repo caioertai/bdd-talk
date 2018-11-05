@@ -8,6 +8,6 @@ RSpec.feature "Pet management", :type => :feature do
     fill_in "Species", with: "Cat"
     click_button "Create Pet"
 
-    expect(page).to have_text("Pet was successfully created.")
+    expect(page).to have_text("Pet was succesfully created.")
   end
 end
