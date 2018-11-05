@@ -12,6 +12,20 @@ RSpec.feature "Cuddling", :type => :feature do
     expect(page).to have_text("Mr. Cuddlesworth")
   end
 
+  scenario "User selects a pet to cuddle" do
+    # Setup
+    Pet.create(name: 'Mr. Cuddlesworth', species: 'Cat')
+
+    # Exercise
+    visit "/"
+    click_link "Mr. Cuddlesworth"
+
+    # Verify
+    expect(page)
+      .to have_text("Mr. Cuddlesworth")
+      .and have_text("Cat")
+  end
+
   scenario "User cuddles a pet" do
     # Setup
     cuddlesworth = Pet.create(name: 'Mr. Cuddlesworth', species: 'Cat')
@@ -19,7 +33,7 @@ RSpec.feature "Cuddling", :type => :feature do
     # Exercise
     visit "/pets/#{cuddlesworth.id}"
 
-    click_button "Cuddle!"
+    click_link "Cuddle!"
 
     # Verify
     expect(page).to have_text("Mr. Cuddlesworth was succesfully cuddled!")
