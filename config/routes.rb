@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'pets/index'
+  resources :pets, only: %i[show]
   root to: 'pets#index'
 end
