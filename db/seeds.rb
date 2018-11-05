@@ -1,2 +1,5 @@
 Pet.destroy_all
-Pet.create(name: Faker::Cat.name, species: Faker::Creature::Animal.name)
+
+5.times do
+  Pet.create(name: Faker::Creature::Cat.name, species: Faker::Creature::Animal.name)
+end
