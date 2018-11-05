@@ -31,6 +31,7 @@ module BddTalk
     config.generators.system_tests = nil
 
     config.generators do |g|
+      g.template_engine :haml
       g.test_framework  :rspec
       g.stylesheets     false
       g.javascripts     false
