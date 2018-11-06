@@ -11,6 +11,8 @@ RSpec.feature "Pet management", :type => :feature do
     click_button "Create Pet"
 
     # Then
-    expect(page).to have_text("Pet was succesfully created.")
+    expect(page)
+      .to have_text("Pet was succesfully created.")
+      .and have_text("Mr. Cuddlesworth")
   end
 end
