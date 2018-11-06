@@ -2,40 +2,39 @@ require "rails_helper"
 
 RSpec.feature "Cuddling", :type => :feature do
   scenario "User sees a list of pets to cuddle" do
-    # Setup
+    # Given
     Pet.create(name: 'Mr. Cuddlesworth', species: 'Cat')
-
-    # Exercise
     visit "/"
 
-    # Verify
+    # When...
+
+    # Then
     expect(page).to have_text("Mr. Cuddlesworth")
   end
 
   scenario "User selects a pet to cuddle" do
-    # Setup
+    # Given
     Pet.create(name: 'Mr. Cuddlesworth', species: 'Cat')
-
-    # Exercise
     visit "/"
+
+    # When
     click_link "Mr. Cuddlesworth"
 
-    # Verify
+    # Then
     expect(page)
       .to have_text("Mr. Cuddlesworth")
       .and have_text("Cat")
   end
 
   scenario "User cuddles a pet" do
-    # Setup
+    # Given
     cuddlesworth = Pet.create(name: 'Mr. Cuddlesworth', species: 'Cat')
-
-    # Exercise
     visit "/pets/#{cuddlesworth.id}"
 
+    # When
     click_link "Cuddle!"
 
-    # Verify
+    # Then
     expect(page).to have_text("Mr. Cuddlesworth was succesfully cuddled!")
   end
 end
