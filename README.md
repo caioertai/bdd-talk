@@ -1,24 +1,9 @@
-# README
+# Welcome to 😼 Cuddle Hunt!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Cuddling
+  - User sees a list of pets to cuddle
+  - User selects a pet to cuddle
+  - User cuddles a pet
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Pet management
+  - User creates a new pet
