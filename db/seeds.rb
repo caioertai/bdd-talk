@@ -20,7 +20,7 @@ species_array = [
   { icon: '🐷', name: 'Pig' },
   { icon: '🐗', name: 'Boar' },
   { icon: '🐏', name: 'Ram' },
-  { icon: '🐑', name: 'Ewe' },
+  { icon: '🐑', name: 'Lamb' },
   { icon: '🐐', name: 'Goat' },
   { icon: '🐪', name: 'Dromedary' },
   { icon: '🐫', name: 'Camel' },
