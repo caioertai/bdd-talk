@@ -5,10 +5,11 @@
     %title BddTalk
     = csrf_meta_tags
     = csp_meta_tag
-    = stylesheet_link_tag    'application', media: 'all'
-    = javascript_include_tag 'application'
+    = stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Halant|Nunito Sans', media: 'all'
+    = stylesheet_link_tag    '/normalize.css', media: 'all'
+    = stylesheet_link_tag    '/application.css', media: 'all'
   %body
     - flash.each do |key, value|
       %div{ class: "alert alert-#{key}" }= value
 
-    = yield
+    .container= yield
