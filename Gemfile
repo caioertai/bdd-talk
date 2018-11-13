@@ -33,6 +33,9 @@ group :development, :test do
   gem 'chromedriver-helper'
   gem 'launchy'
   gem 'rspec-rails'
+
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 group :development do
