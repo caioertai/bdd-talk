@@ -1,6 +1,19 @@
 require "rails_helper"
 
 RSpec.feature "Pet management", :type => :feature do
+  scenario "User navigates to pet adding form" do
+    # Given...
+    visit "/pets/new"
+
+    # When
+    # click_link "Add a Pet"
+
+    # Then
+    expect(page)
+      .to have_content("form")
+      .and have_text("Create a new Pet")
+  end
+
   scenario "User creates a new pet" do
     # Given...
     visit "/pets/new"
