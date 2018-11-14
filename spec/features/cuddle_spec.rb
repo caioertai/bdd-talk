@@ -37,4 +37,6 @@ RSpec.feature "Cuddling", :type => :feature do
     # Then
     expect(page).to have_text("Mr. Cuddlesworth was succesfully cuddled!")
   end
+
+  pending "User sees a prompt to add pets if none exist"
 end
