@@ -6,4 +6,5 @@
   - User cuddles a pet
 
 ## Pet management
+  - User can see a form for adding pets
   - User creates a new pet
