@@ -8,7 +8,8 @@ RSpec.feature 'Cuddling', type: :feature do
     Pet.create(name: 'Mr. Cuddlesworth', species: 'Cat')
     visit '/'
 
-    # When...
+    # When
+    # ...
 
     # Then
     expect(page).to have_text('Mr. Cuddlesworth')
