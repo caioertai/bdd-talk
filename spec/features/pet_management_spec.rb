@@ -5,10 +5,10 @@ require 'rails_helper'
 RSpec.feature 'Pet management', type: :feature do
   scenario 'User navigates to pet adding form' do
     # Given...
-    visit '/pets/new'
+    visit '/'
 
     # When
-    # click_link "Add a Pet"
+    click_link "Add a Pet"
 
     # Then
     expect(page)
